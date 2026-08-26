@@ -1,4 +1,8 @@
-#own exceptions
+# eigene Ausnahmen
+class wrongTypeException(TypeError):
+    pass
+
+
 class getItemException(Exception):
     pass
 
@@ -16,7 +20,7 @@ class ADT():
         if self.__item is None or isinstance(item, type(self.__item)):
             self.__item = item
         else:
-            raise TypeError('Type of item is ', type(item), ', but must be ', type(self.__item))
+            raise wrongTypeException('Type of item is ', type(item), ', but must be ', type(self.__item))
     
     def isEmpty(self):
         """Wenn kein Element enthalten ist wird der Wert 'True' zurückgegeben, ansonsten 'False'"""
@@ -80,7 +84,7 @@ class Stack(ADT):
             self.item = item
             self._ADT__next = stack
         else:
-            raise TypeError('Type of item is ', type(item), ', but must be ', type(self._ADT__item))
+            raise wrongTypeException('Type of item is ', type(item), ', but must be ', type(self._ADT__item))
 #End Stack
 
 #ADT Queue
@@ -113,7 +117,7 @@ class Queue(ADT):
         if self.isEmpty():
             self.item=item
         elif not isinstance(item, type(self.item)):
-            raise TypeError('Type of item is ', type(item), ', but must be ', type(self._ADT__item))
+            raise wrongTypeException('Type of item is ', type(item), ', but must be ', type(self._ADT__item))
         elif self._ADT__next is None:
             self._ADT__next = Queue(item)
         else:
@@ -133,7 +137,7 @@ class DynArray(ADT):
         if self.isEmpty():
             self.item = item
         elif not isinstance(item, type(self.item)):
-            raise TypeError('Type of item is ', type(item), ', but must be ', type(self._ADT__item))
+            raise wrongTypeException('Type of item is ', type(item), ', but must be ', type(self._ADT__item))
         elif self._ADT__next is None:
             new = DynArray(item)
             new.__prev = self
