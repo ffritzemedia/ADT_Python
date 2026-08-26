@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from trees import *
+from ADT.trees import *
 
 binTree = BinTree(5)
 #print(type(binTree.root))

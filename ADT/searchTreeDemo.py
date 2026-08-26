@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-from searchtree import *
+from ADT.searchtree import *
 
 try: 
     errTree = SearchTree()

@@ -1,5 +1,5 @@
 #! /usr/bin/env python3
-from adt import *
+from ADT.adt import *
 
 #Tests für den Datentypen Stack
 stack = Stack(0) #Ein neuer Stack mit dem Item 0 wird angelegt, dadurch wird der Datentyp int für den Inhalt des Stapels festgelegt

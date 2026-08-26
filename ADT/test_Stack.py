@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 import unittest
-from adt import Stack, wrongTypeException, getItemException
+from ADT.adt import Stack, wrongTypeException, getItemException
 
 class TestStack(unittest.TestCase):
 

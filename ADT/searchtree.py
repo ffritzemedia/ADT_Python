@@ -1,4 +1,4 @@
-from adt import BinTree
+from ADT.adt import BinTree
 
 class AccessForbidden(Exception):
     pass

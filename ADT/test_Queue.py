@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 import unittest
-from adt import Queue, wrongTypeException, getItemException
+from ADT.adt import Queue, wrongTypeException, getItemException
 
 class TestQueue(unittest.TestCase):
 
