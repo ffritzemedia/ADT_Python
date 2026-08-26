@@ -12,3 +12,6 @@ dependencies = []
 
 [tool.setuptools.packages.find]
 include = ["ADT*"]
+
+[tool.setuptools]
+py-modules = ["adt", "searchtree", "trees"]

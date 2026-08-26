@@ -1,5 +1,8 @@
 README.md
+adt.py
 pyproject.toml
+searchtree.py
+trees.py
 ADT/__init__.py
 ADT/adt.py
 ADT/adtDemo.py

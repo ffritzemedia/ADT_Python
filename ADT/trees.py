@@ -242,6 +242,11 @@ class SearchTree(BinTree):
             return self.getRight().contains(item)
         else:
             return False
+
+
+# Kompatibilitaetsnamen fuer Importe wie ``from trees import bintree``.
+bintree = BinTree
+searchtree = SearchTree
         
     
         
